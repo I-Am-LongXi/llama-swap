@@ -256,6 +256,7 @@ func (s *Server) routes() {
 		authMW,
 		CreateProfileMiddleware(s),
 		CreateSelectorMiddleware(s),
+		CreateFallbackMiddleware(s),
 		CreateRequestContextMiddleware(s.cfg),
 		CreateInflightMiddleware(s.inflight, s.cfg),
 		CreateFilterMiddleware(s.cfg),

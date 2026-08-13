@@ -6,5 +6,9 @@ dist/
 .DS_Store
 .dev/
 
+# Local runtime config and logs
+config.yaml
+*.log
+
 # UI build output; embedded via the `embed_ui` build tag (internal/server/embed.go)
 internal/server/ui_dist/*
